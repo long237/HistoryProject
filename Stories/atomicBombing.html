@@ -11,12 +11,11 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="atomicBombing" startnode="1" creator="Twine" creator-version="2.3.5" ifid="45F28505-B5E6-4C04-8BDF-E9FDEAD615B1" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Menu" tags="" position="502,0" size="100,100">
-[[Start-&gt;Context]]</tw-passagedata><tw-passagedata pid="2" name="Context" tags="" position="792,3" size="100,100">Three years after the battle of Midway in which the United States has made a decisive victory over the Imperial Japan Navy with the sinking of four IJN air-craft carriers Akagi, Kaga, Hiryu, Soryu.
+<tw-storydata name="atomicBombing" startnode="1" creator="Twine" creator-version="2.3.5" ifid="45F28505-B5E6-4C04-8BDF-E9FDEAD615B1" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Menu" tags="" position="502,0" size="100,100">[[Start-&gt;Context]]</tw-passagedata><tw-passagedata pid="2" name="Context" tags="" position="792,3" size="100,100">Three years after the battle of Midway in which the United States has made a decisive victory over the Imperial Japan Navy with the sinking of four IJN air-craft carriers Akagi, Kaga, Hiryu, Soryu.
 Three months after the United States has taken Iwo Jima and Okinawa the two key islands which open the door to mainland Japan
 You are John. You are one of Truman best friends! He usually comes to you for advises on politics. 
 
-[[continue-&gt;After the battle of Okinawa and Iwo Jima]]</tw-passagedata><tw-passagedata pid="3" name="Two weeks before the bombing (July 20th)" tags="" position="1115,179" size="100,100">
+[[continue-&gt;After the battle of Okinawa and Iwo Jima]]</tw-passagedata><tw-passagedata pid="3" name="Two weeks before the bombing (July 20th)" tags="" position="1139,156" size="100,100">
 Today is my birthday. I invited Truman to come over and celebrate on the premise of asking him his plan on ending the war.
 Once he arrived we sat down in the living room and have small talk.
 
@@ -25,21 +24,21 @@ He told me, &quot;I am unsure. What do you think?&quot;.
 
 [[Advocate for using the bomb -&gt; Bombing Branch]]
 [[Advocate for not using the bomb -&gt; No-bombing branch]]
-</tw-passagedata><tw-passagedata pid="4" name=" Bombing Branch" tags="" position="978,341" size="100,100">(set: $fate to + 1)
+</tw-passagedata><tw-passagedata pid="4" name=" Bombing Branch" tags="" position="1034,299" size="100,100">(set: $fate += 1)
 
 I asked him about the status of the bombs. 
 Truman replied: &quot;They are completed and ready to use to end a 6 years war&quot;
 He add &quot;However the effect would be tremendous&quot;
 
 &lt;!--1 point--&gt;
-[[I suggest that it would save a lot of American lives if the bomb were to be used because invading mainland Japan is not necessary-&gt;Ultimatum]]
+&lt;!--hover over this to get more info on how lives are save. Mouse over--&gt;
+[[[I suggest that it would save a lot of American lives if the bomb were to be used because invading mainland Japan is not necessary-&gt;The Allies Send The Ultimatum]](set: $fate += 1)]
 
 &lt;!--2 points--&gt;
-[[I said that it would strengthen the United States position as a world leader-&gt;Ultimatum]]
+[[[I said that it would strengthen the United States position as a world leader-&gt;The Allies Send The Ultimatum]](set: $fate += 2)]
 
 &lt;!--3 points--&gt;
-[[I told him it would be a good opputunity to test the new weapon and it effects-&gt;Ultimatum]] 
-</tw-passagedata><tw-passagedata pid="5" name=" No-bombing branch" tags="" position="1223,342" size="100,100">&lt;!-- decrease 1 point--&gt;
+[[[I told him it would be a good opputunity to test the new weapon and it effects-&gt;The Allies Send The Ultimatum]](set: $fate += 3)]</tw-passagedata><tw-passagedata pid="5" name=" No-bombing branch" tags="" position="1254,302" size="100,100">&lt;!-- decrease 1 point--&gt;
 (set: $fate to - 1)
 
 I asked him about the status of the bombs. 
@@ -47,16 +46,16 @@ Truman replied: &quot;They are completed and ready to use to end a 6 years war&q
 He add &quot;However the effect would be tremendous&quot;
 
 &lt;!--negative 3 point--&gt;
-[[I advise Truman that using the bomb would not just kill enemies soldiers but also unarm civilians-&gt;Ultimatum]] 
+[[[I advise Truman that using the bomb would not just kill enemies soldiers but also unarm civilians-&gt;The Allies Send The Ultimatum]] (set: $fate -= 3)]
 
 &lt;!--negative 1 point--&gt;
-[[I advise Truman against the usage of the bomb since it would cause long term environmental effects-&gt;Ultimatum]] 
-</tw-passagedata><tw-passagedata pid="6" name="Ultimatum" tags="" position="1107,531" size="100,100">
+[[[I advise Truman against the usage of the bomb since it would cause long term environmental effects-&gt;The Allies Send The Ultimatum]] (set: $fate -= 1)]
+</tw-passagedata><tw-passagedata pid="6" name="Ultimatum" tags="" position="1126,656" size="100,100">
 fate: (print: $fate)
 The Allies send Japan an ultimatum which demands Japan to unconditionally surrender.
 Japan refused the demands.
 You found out about this incident through Truman.
-After considerations of Japan reponses and their [[current standing-&gt;Japan&#39;s Standing]] in the war these are you thoughts.
+After considerations of Japan reponses and their current standing in the war these are you thoughts.
 
 &lt;!--picture of the Big 3 together--&gt;
 &lt;img src= &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\potsdam.jpg&quot; 
@@ -70,13 +69,11 @@ width = &quot;700&quot; height = &quot;500&quot;&gt;
 (else:)[ You have chosen the path of violence and therefore the inevitable comes for you
 [[Support the bombing|3 Days After The Bombing of Hiroshima]]]
 
-</tw-passagedata><tw-passagedata pid="7" name="Japan&#39;s Standing" tags="" position="769,491" size="100,100">You will be a Japanese Citizen who name is Gintoki Sakata who lives in the city of Hiroshima during World War II.
+</tw-passagedata><tw-passagedata pid="7" name="Japan&#39;s Standing" tags="" position="646,493" size="100,100">You will be a Japanese Citizen who name is Gintoki Sakata who lives in the city of Hiroshima during World War II.
 You have a family, a wife and two kids one boy and one girls. You work at a factory that produce submarines at a city name port Kure, South East of Hiroshima with a distance of 24.8km
 Gintoki family financial situation is unstable due to war time economy. Gintoki and his wife has to work extra-hours just to earn enough for a living. 
 [[continue-&gt;Going to work]]
-</tw-passagedata><tw-passagedata pid="8" name="Bombing Continue" tags="" position="781,911" size="100,100">More aftermath images
-
-[[3 Days After The Bombing of Hiroshima]] </tw-passagedata><tw-passagedata pid="9" name="Peaceful Approach" tags="" position="1258,804" size="100,100">&lt;!--An alternate universe with modern day Hiroshima pic--&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Peaceful Approach" tags="" position="1278,784" size="100,100">&lt;!--An alternate universe with modern day Hiroshima pic--&gt;
 On September 2, 1945, Japanese officials board the USS Missouri to sign the surrendering terms.
 
 &lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\surrender2.jpg&quot; 
@@ -88,12 +85,15 @@ width = &quot;700&quot; height = &quot;500&quot;&gt;
 &lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\surrender3.jpg&quot; 
 width = &quot;700&quot; height = &quot;500&quot;&gt;
 
-[[75 years later|Happy Ending]]</tw-passagedata><tw-passagedata pid="10" name="After the battle of Okinawa and Iwo Jima" tags="" position="1093,12" size="100,100">&lt;!--variable fate, positive is in favor of the bomb, negative in not--&gt;
+[[News|US Citizen]]
+
+
+</tw-passagedata><tw-passagedata pid="9" name="After the battle of Okinawa and Iwo Jima" tags="" position="1139,2" size="100,100">&lt;!--variable fate, positive is in favor of the bomb, negative in not--&gt;
 (set: $fate = 0)
 After learning the news about the victory of the battle of Okinawa, I discuss with Truman about the current standing of the war.
 I told Truman that with the foothold at Okinawa and Iwo Jima invading mainland Japan is a little bit less troublesome.
 
-[[Two weeks before the bombing (July 20th)]] </tw-passagedata><tw-passagedata pid="11" name="Going to work" tags="" position="418,517" size="100,100">July 27th, 1945
+[[Two weeks before the bombing (July 20th)]] </tw-passagedata><tw-passagedata pid="10" name="Going to work" tags="" position="418,518" size="100,100">July 27th, 1945
 One week before the bomb is dropped on Hiroshima
 
 You head to work at the factory Kure and on your way to work you pass by the busy streets of Hiroshima.
@@ -105,7 +105,7 @@ width = &quot;700&quot; height = &quot;500&quot;&gt;
 
 You heard over the news that on the train that the Allies has sent the Postdam Ultimatum that demands the surrender of Japan.
 [[Persuade coworkers to go on strike-&gt; Save Lives and Improve Economy]]
-[[Support the continuation of the war-&gt; Keep Fighting Until The Last Man]]</tw-passagedata><tw-passagedata pid="12" name=" Save Lives and Improve Economy" tags="" position="551,717" size="100,100">(set: $fate to - 1)
+[[Support the continuation of the war-&gt; Keep Fighting Until The Last Man]]</tw-passagedata><tw-passagedata pid="11" name=" Save Lives and Improve Economy" tags="" position="552,717" size="100,100">(set: $fate -= 1)
 fate: (print: $fate)
 
 The shipyard is very proud of their work with the finish of the biggest battleship in the world and the the shipyard is proud of their contribution in the war effort.
@@ -118,7 +118,7 @@ width = &quot;1200&quot; height = &quot;700&quot;&gt;
 You told your co-workers tha twith the lost of the flagship Yamato Japan has lost the battle over the Pacific and losing is inevitable and since we don&#39;t have a navy anymore, dragging the War out will do no good
 You try to convince your co-workers that not surrendering is bad idea since it that means the economy would continue be bad which leads to less job and lower wages.
 
-[[Get home from work| Later That Day]]</tw-passagedata><tw-passagedata pid="13" name=" Keep Fighting Until The Last Man" tags="" position="282,717" size="100,100">(set: $fate to + 1)
+[[Get home from work| Later That Day]]</tw-passagedata><tw-passagedata pid="12" name=" Keep Fighting Until The Last Man" tags="" position="282,717" size="100,100">(set: $fate += 1)
 fate: (print: $fate)
 
 You arrived at work. You met some of your friends and co-workers who were still discussing about the lost of the battleship Yamato and the future of the country. 
@@ -133,19 +133,19 @@ width = &quot;1200&quot; height = &quot;700&quot;&gt;
 
 You mention to your co-workers that surrendering would be a disgrace to the nation. 
 
-[[Get home from work-&gt; Later That Day]] </tw-passagedata><tw-passagedata pid="14" name="On The Day of the bombing" tags="" position="496,1102" size="100,100">Morning of August 6th, 1945. You head to work normally at Kure shipyard
+[[Get home from work-&gt; Later That Day]] </tw-passagedata><tw-passagedata pid="13" name="On The Day of the bombing" tags="" position="459,1120" size="100,100">Morning of August 6th, 1945. You head to work normally at Kure shipyard
 You say goodbye to your family before you head to work especially your little ones who are 4 and 6 years old. 
 
-[[Ultimatum]] </tw-passagedata><tw-passagedata pid="15" name=" Later That Day" tags="" position="428,901" size="100,100">It&#39;s already six o&#39;clock in the evening, Coming home from work you are exhausted and want some rest to prepare for the next day. 
+[[Ultimatum]] </tw-passagedata><tw-passagedata pid="14" name=" Later That Day" tags="" position="428,901" size="100,100">It&#39;s already six o&#39;clock in the evening, Coming home from work you are exhausted and want some rest to prepare for the next day. 
 Since the the last two years, the manager has forced you and your co-workers to work extra hours while paying less since Japan was losing the war and want to increase it effort. 
 
-[[August 6th|On The Day of the bombing]] </tw-passagedata><tw-passagedata pid="16" name="3 Days After The Bombing of Hiroshima" tags="" position="946,833" size="100,100">On his way back from the shipyard, you are eager to see you family again. 
+[[August 6th|On The Day of the bombing]] </tw-passagedata><tw-passagedata pid="15" name="3 Days After The Bombing of Hiroshima" tags="" position="998,798" size="100,100">On his way back from the shipyard, you are eager to see you family again. 
 However, you see a huge flash that is bright as day coming from the direction of Hiroshima city and then you feel the gust of wind and the shock coming from the same direction. 
 
 You feels speechless and and hoping it is not what you are thinking that happened. 
 The train make an emergency stop due to unexpected incidents. You are 15 mins away from home and you decide to make a run home. 
 
-[[Continue your way home|Destruction]]</tw-passagedata><tw-passagedata pid="17" name="Destruction" tags="" position="928,1062" size="100,100">You arrive at the edge of the city and the sight shocks you: 
+[[Continue your way home|Destruction]]</tw-passagedata><tw-passagedata pid="16" name="Destruction" tags="" position="1001,999" size="100,100">You arrive at the edge of the city and the sight shocks you: 
 
 &lt;!--the player stop at the edge of the town--&gt; 
 &lt;img src=&quot;C:\Users\Chunchunmaru\Documents\Twine\Images\groundzero.png&quot; 
@@ -162,7 +162,7 @@ width = &quot;700&quot; height = &quot;500&quot;&gt;
 
 [[The news|More aftermath]]
 
-&lt;audio src=&quot;C:\Users\Chunchunmaru\Documents\Twine\Sound\ToZanarkand.mp3&quot; autoplay loop&gt;</tw-passagedata><tw-passagedata pid="18" name="Happy Ending" tags="" position="1275,1024" size="100,100">&lt;!--images of modern Hiroshima with no source since it&#39;s alternative--&gt;
+&lt;audio src=&quot;C:\Users\Chunchunmaru\Documents\Twine\Sound\ToZanarkand.mp3&quot; autoplay loop&gt;</tw-passagedata><tw-passagedata pid="17" name="Happy Ending" tags="" position="1302,1506" size="100,100">&lt;!--images of modern Hiroshima with no source since it&#39;s alternative--&gt;
 
 Modern Day Japan
 
@@ -175,7 +175,7 @@ width = &quot;700&quot; heigth = &quot;500&quot;&gt;
 &lt;img src= &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\modern3.jpg&quot; 
 width = &quot;700&quot; heigth = &quot;500&quot;&gt;
 
-The end</tw-passagedata><tw-passagedata pid="19" name="More aftermath" tags="" position="928,1292" size="100,100">You pick up the newspaper and have a glimpse at the full scale destruction
+The end</tw-passagedata><tw-passagedata pid="18" name="More aftermath" tags="" position="1001,1201" size="100,100">You pick up the newspaper and have a glimpse at the full scale destruction
 
 &lt;img src= &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\building.png&quot; 
 width = &quot;700&quot; heigth = &quot;500&quot;&gt;
@@ -195,7 +195,19 @@ Where was once a city has now turned into a parking lot
 width = &quot;700&quot; heigth = &quot;500&quot;&gt;
 
 &lt;img src= &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\streetAfterMath.jpg&quot; 
-width = &quot;700&quot; heigth = &quot;500&quot;&gt;</tw-passagedata></tw-storydata>
+width = &quot;700&quot; heigth = &quot;500&quot;&gt;
+
+[[US Citizen]] </tw-passagedata><tw-passagedata pid="19" name="Japanese Official" tags="" position="899,468" size="100,100">[[Japan&#39;s Standing]] </tw-passagedata><tw-passagedata pid="20" name="The Allies Send The Ultimatum" tags="" position="1180,514" size="100,100">[[One Day After The Allies Send The Ultimatum|Japanese Official]]</tw-passagedata><tw-passagedata pid="21" name="US Citizen" tags="" position="1167,1306" size="100,100">(if: $fate &lt; 0) [John found out that Japan surreder with the Potsdam ultimatum Japan surrender early leads to happy ending [[Happy Ending]] ]
+(else:) [John found out on NY Times that the Japan surrender after the bombing and the war end[[Japan Surrender]]]</tw-passagedata><tw-passagedata pid="22" name="Japan Surrender" tags="" position="1004,1501" size="100,100">On September 2, 1945, Japanese officials board the USS Missouri to sign the surrendering terms.
+
+&lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\surrender2.jpg&quot; 
+width = &quot;700&quot; height = &quot;500&quot;&gt;
+
+&lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\surrender1.jpg&quot; 
+width = &quot;700&quot; height = &quot;500&quot;&gt;
+
+&lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\surrender3.jpg&quot; 
+width = &quot;700&quot; height = &quot;500&quot;&gt;</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
