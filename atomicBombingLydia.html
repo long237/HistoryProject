@@ -11,32 +11,27 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="atomicBombing" startnode="1" creator="Twine" creator-version="2.3.5" ifid="45F28505-B5E6-4C04-8BDF-E9FDEAD615B1" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Menu" tags="" position="502,0" size="100,100">[[Start-&gt;Context]]</tw-passagedata><tw-passagedata pid="2" name="Context" tags="" position="792,3" size="100,100">Three years after the battle of Midway in which the United States has made a decisive victory over the Imperial Japan Navy with the sinking of four IJN air-craft carriers Akagi, Kaga, Hiryu, Soryu.
-Three months after the United States has taken Iwo Jima and Okinawa the two key islands which open the door to mainland Japan
-You are John. You are one of Truman best friends! He usually comes to you for advises on politics. 
+<tw-storydata name="atomicBombing" startnode="1" creator="Twine" creator-version="2.3.5" ifid="45F28505-B5E6-4C04-8BDF-E9FDEAD615B1" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Menu" tags="" position="502,0" size="100,100">[[Start-&gt;Context]]</tw-passagedata><tw-passagedata pid="2" name="Context" tags="" position="792,3" size="100,100">Three years after the battle of Midway, the United States has made a decisive victory over the Imperial Japan Navy with the sinking of four IJN air-craft carriers: Akagi, Kaga, Hiryu, Soryu. &lt;!--needs more context--&gt;
 
-[[continue-&gt;After the battle of Okinawa and Iwo Jima]]</tw-passagedata><tw-passagedata pid="3" name="Two weeks before the bombing (July 20th)" tags="" position="1306,140" size="100,100">Once President Truman came over, I gave him a cup of tea to show some hospitality and invited him to sit down in the living room. As soon as he got himself comfortable, I decided to go straight to the point because we have no time to lose.
+Three months after the United States has taken Iwo Jima and Okinawa, the two key islands which open the door to mainland Japan...
 
-&quot;Are you going to use the atomic bomb to end the war with Japan?&quot; I asked uneasily.
+You are John, one of Truman best friends. He usually comes to you for advice on politics. 
+
+[[continue-&gt;After the battle of Okinawa and Iwo Jima]]</tw-passagedata><tw-passagedata pid="3" name="Two weeks before the bombing (July 20th)" tags="" position="1139,156" size="100,100"> Once President Truman came over, I gave him a cup of tea to show some hospitality and invited him to sit down in the living room. As soon as he got himself comfortable, I decided to go straight to the point because we have no time to lose.
+ 
+ &quot;Are you going to use the atomic bomb to end the war with Japan?&quot; I asked uneasily.
 
 The President paused for a moment to think for a moment and asked me, &quot;I am unsure. What do you think?&quot;.
 
 [[Advocate for using the bomb -&gt; Bombing Branch]]
-[[Advocate for not using the bomb -&gt; No-bombing branch]]</tw-passagedata><tw-passagedata pid="4" name=" Bombing Branch" tags="" position="1040,272" size="100,100">(set: $fate += 1)
-
+[[Advocate for not using the bomb -&gt; No-bombing branch]]
+</tw-passagedata><tw-passagedata pid="4" name=" Bombing Branch" tags="" position="1034,299" size="100,100">(set: $fate += 1)
 I asked him about the status of the bombs. 
+ 
 Truman replied, &quot;They are completed and ready to use. It&#39;s effective and tremendous enough to end this war that lasted for six years.&quot;
 
 He paused for a moment again and signed reluctantly,&quot;Although that&#39;s a good sign, there are some bad things about it too.&quot;
 
-Before meeting Truman I have come up with a few reasoning of why using the bomb is a good idea to end the war, since the public is already tired of a 6 years long war and they want to end the war to save their love ones. (mouseover: &quot;love ones&quot;) [Explore the reasoning behind [[saving lives]]]
-
-I think with tension mounting between the Allies and the USSR as the end of the war approaches leaving the world leader position to the Communist Party is a threat. (mouseover: &quot;world leader&quot;) [Reason for world [[leader positon]]]
-
-With the new weapons the harness the power of the universe itself, I thought it would be a great chance to test such weapons for future uses. (mouseover: &quot;power&quot;) [Explore potential power of the [[new weapon]] ]
-
-
-I ponder on what I should recommend to Truman since these decision affect the lives of a lot of people
 &lt;!--1 point--&gt;
 &lt;!--hover over this to get more info on how lives are save. Mouse over--&gt;
 [[[I suggest that it would save a lot of American lives if the bomb were to be used because invading mainland Japan is not necessary-&gt;The Allies Send The Ultimatum]](set: $fate += 1)]
@@ -45,24 +40,21 @@ I ponder on what I should recommend to Truman since these decision affect the li
 [[[I said that it would strengthen the United States position as a world leader-&gt;The Allies Send The Ultimatum]](set: $fate += 2)]
 
 &lt;!--3 points--&gt;
-[[[I told him it would be a good opputunity to test the new weapon and it effects-&gt;The Allies Send The Ultimatum]](set: $fate += 3)]</tw-passagedata><tw-passagedata pid="5" name=" No-bombing branch" tags="" position="1331,347" size="100,100">&lt;!-- decrease 1 point--&gt;
-(set: $fate -= 1)
+[[[I told him it would be a good opputunity to test the new weapon and it effects-&gt;The Allies Send The Ultimatum]](set: $fate += 3)]</tw-passagedata><tw-passagedata pid="5" name=" No-bombing branch" tags="" position="1254,302" size="100,100">&lt;!-- decrease 1 point--&gt;
+(set: $fate to - 1)
 
 I asked him about the status of the bombs. 
+ 
 Truman replied, &quot;They are completed and ready to use. It&#39;s effective and tremendous enough to end this war that lasted for six years.&quot;
 
 He paused for a moment again and signed reluctantly,&quot;Although that&#39;s a good sign, there are some bad things about it too.&quot;
 
-Although most of the offcials advice Truman to use the bomb to end the war quickly and cut further American troop losses. I think that he should also consider what it would do to the enemy as well considering the power of the bomb.(mouseover: &quot;power of the bomb&quot;) [Explore the [[bomb potential|new weapon]] ]
-
-In my opinion not dropping the bomb on Japan and try to negotiate it out might help the United States secure an ally in the Pacific Ocean which help extend the range of influence into Asia. (mouseover: &quot;ally in the Pacific Ocean&quot;) [Explore the potential of [[gaining an ally]]]
-
-Another reason that I thought would be great economicly is by not dropping the bomb, the secret weapon will not be reveal to the USSR. (mouseover: &quot;reveal to the USSR&quot;) [Explore the [[relationship]] between the US and the USSR]
 &lt;!--negative 3 point--&gt;
 [[[I advise Truman that using the bomb would not just kill enemies soldiers but also unarm civilians-&gt;The Allies Send The Ultimatum]] (set: $fate -= 3)]
 
 &lt;!--negative 1 point--&gt;
-[[[I advise Truman against the usage of the bomb since it would cause long term environmental effects-&gt;The Allies Send The Ultimatum]] (set: $fate -= 1)]</tw-passagedata><tw-passagedata pid="6" name="Ultimatum" tags="" position="1195,846" size="100,100">
+[[[I advise Truman against the usage of the bomb since it would cause long term environmental effects-&gt;The Allies Send The Ultimatum]] (set: $fate -= 1)]
+</tw-passagedata><tw-passagedata pid="6" name="Ultimatum" tags="" position="1126,656" size="100,100">
 fate: (print: $fate)
 The Allies send Japan an ultimatum which demands Japan to unconditionally surrender.
 Japan refused the demands.
@@ -81,11 +73,13 @@ width = &quot;700&quot; height = &quot;500&quot;&gt;
 (else:)[ You have chosen the path of violence and therefore the inevitable comes for you
 [[Support the bombing|3 Days After The Bombing of Hiroshima]]]
 
-</tw-passagedata><tw-passagedata pid="7" name="Japan&#39;s Standing" tags="" position="386,527" size="100,100">You will be a Japanese Citizen who name is Gintoki Sakata who lives in the city of Hiroshima during World War II.
-You have a family, a wife and two kids one boy and one girls. You work at a factory that produce submarines at a city name port Kure, South East of Hiroshima with a distance of 24.8km
-Gintoki family financial situation is unstable due to war time economy. Gintoki and his wife has to work extra-hours just to earn enough for a living. 
+</tw-passagedata><tw-passagedata pid="7" name="Japan&#39;s Standing" tags="" position="646,493" size="100,100">You are a Japanese citizen named Gintoki Sakata who lives in the city of Hiroshima during World War II.
+
+You have a family: a wife and two kids, one boy and one girl. You work at a factory that produce submarines at a city name Port Kure, South East of Hiroshima with a distance of 24.8 kilometers.
+
+Your financial situation is unstable due to war time economy. You and your has to work extra hours just to earn enough for a living. 
 [[continue-&gt;Going to work]]
-</tw-passagedata><tw-passagedata pid="8" name="Peaceful Approach" tags="" position="1309,1188" size="100,100">&lt;!--An alternate universe with modern day Hiroshima pic--&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Peaceful Approach" tags="" position="1278,784" size="100,100">&lt;!--An alternate universe with modern day Hiroshima pic--&gt;
 On September 2, 1945, Japanese officials board the USS Missouri to sign the surrendering terms.
 
 &lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\surrender2.jpg&quot; 
@@ -102,16 +96,20 @@ width = &quot;700&quot; height = &quot;500&quot;&gt;
 
 </tw-passagedata><tw-passagedata pid="9" name="After the battle of Okinawa and Iwo Jima" tags="" position="1139,2" size="100,100">&lt;!--variable fate, positive is in favor of the bomb, negative in not--&gt;
 (set: $fate = 0)
+
 During my own break, I watched the TV to learn what&#39;s going on in the war. Nothing really interesting happened until I read the headlines on the TV.
 
 &quot;Victory Standing in Okinawa!&quot;
 
-The glaring headlines blinded me as I repeatedly read it. I was conflicted about the news and the things that I was going through with the government. With the bomb that was either about to be bombed or not, I had to voice my opinion towards this matter to President Truman.
+The glaring headlines blinded me as I repeatedly read it. I was conflicted about the news and the things that I was going through with the government. With the bomb that was either about to be bombed or not, I had to voice my opinion towards this matter to President Truman. 
 
 I grabbed my phone, punched the numbers, and held it next to my ear to hear the ringing noise until I heard a voice. To talk with the president face-to-face, I invited him to my house to discuss this very important matter.
-[[Two weeks before the bombing (July 20th)]] </tw-passagedata><tw-passagedata pid="10" name="Going to work" tags="" position="380,701" size="100,100">July 27th, 1945
-One week before the bomb is dropped on Hiroshima
-It is currently 7:00 AM.
+
+
+[[Two weeks before the bombing (July 20th)]] </tw-passagedata><tw-passagedata pid="10" name="Going to work" tags="" position="418,518" size="100,100">July 27th, 1945
+One week before the bomb is dropped on Hiroshima...
+
+It is currently 7:00 AM. 
 
 You woke up from you sleep despite having only few hours of sleep. Although you wanted to sleep more, you can&#39;t help but have to stay deligent towards work. As soon as you jumped off from your bed, you did your daily morning routine and head on out to the door.
 
@@ -120,19 +118,18 @@ You opened the door and left it locked to keep it secure and started to walk in 
 As you walked, you head to the train station and went to train that you usually go to work and sat on the available chair near you. You were about to get your phone from your pocket, but you heard something shocking on the news...
 
 The Allies has sent the Postdam Ultimatum which demands the surrender of Japan.
-&lt;!--You head to work at the factory Kure and on your way to work you pass by the busy streets of Hiroshima.--&gt;
+
 
 &lt;!--hiroshima before the bombing--&gt;
 &lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\hiroshimaBefore.jpg&quot; 
 width = &quot;700&quot; height = &quot;500&quot;&gt; 
 
-
-&lt;!--You heard over the news that on the train that the Allies has sent the Postdam Ultimatum that demands the surrender of Japan.--&gt;
 [[Persuade coworkers to go on strike-&gt; Save Lives and Improve Economy]]
-[[Support the continuation of the war-&gt; Keep Fighting Until The Last Man]]</tw-passagedata><tw-passagedata pid="11" name=" Save Lives and Improve Economy" tags="" position="514,843" size="100,100">(set: $fate -= 1)
+[[Support the continuation of the war-&gt; Keep Fighting Until The Last Man]]</tw-passagedata><tw-passagedata pid="11" name=" Save Lives and Improve Economy" tags="" position="552,717" size="100,100">(set: $fate -= 1)
 fate: (print: $fate)
 
 As you dreadingly finally came to work, you saw your friends and co-workers who were muttering something. To hear their conversations clearly, you quickly went to work to catch up. You realized that they were discussing about a battleship named Yamato and the future of the country. The shipyard clearly showed that they were proud of their finished work and their contribution in the war effort.
+
 &lt;!--legendary battleship--&gt;
 &lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\yamato2.jpg&quot; 
 width = &quot;1200&quot; height = &quot;700&quot;&gt;
@@ -140,28 +137,25 @@ width = &quot;1200&quot; height = &quot;700&quot;&gt;
 &lt;img src=&quot;C:\Users\Chunchunmaru\Documents\Twine\Images\yamato.jpg&quot;
 width = &quot;1200&quot; height = &quot;700&quot;&gt;
 
-I recalled the great time when we just finished the Yamato with my friends,
-&quot;Our hard work and deligence paid off! Let&#39;s see how this guy will pull thorugh as it fights off the enemy,&quot; Yagami exclaimed as he placed his hand on the battleship to lean on it.
+&quot;Our hard work and deligence paid off! Let&#39;s see how this guy will pull thorugh as it fights off the enemy,&quot; Yagami exclaimed as he placed his hand on the battleship to lean on it. 
 
 &quot;Haha! I&#39;m pretty sure it&#39;ll survive throughout the war. It&#39;s strong enough to defeat all every enemy!&quot; Kagami said.
 
-Snapping back to reality:
 You put your neck in worry and shoved your hand in your pocket. You forcefully make yourself to build confidence and voiced your opinon, &quot;I don&#39;t know... Since we lost Yamato, we don&#39;t have a navy anymore. Dragging the war will doesn&#39;t really benefit us. I don&#39;t think surrendering is a bad idea because it&#39;ll lead the collapse of the economy and lower wages and unemployment.
 
-&lt;!--You told your co-workers tha twith the lost of the flagship Yamato Japan has lost the battle over the Pacific and losing is inevitable and since we don&#39;t have a navy anymore, dragging the War out will do no good
-You try to convince your co-workers that not surrendering is bad idea since it that means the economy would continue be bad which leads to less job and lower wages.--&gt;
 
-[[Get home from work| Later That Day]]</tw-passagedata><tw-passagedata pid="12" name=" Keep Fighting Until The Last Man" tags="" position="264,856" size="100,100">(set: $fate += 1)
+
+[[Get home from work| Later That Day]]</tw-passagedata><tw-passagedata pid="12" name=" Keep Fighting Until The Last Man" tags="" position="282,717" size="100,100">(set: $fate += 1)
 fate: (print: $fate)
 
 As you dreadingly finally came to work, you saw your friends and co-workers who were muttering something. To hear their conversations clearly, you quickly went to work to catch up. You realized that they were discussing about a battleship named Yamato and the future of the country. The shipyard clearly showed that they were proud of their finished work and their contribution in the war effort.
 
-I recalled of the time when the battleship Yamato is just finished,
-&quot;Our hard work and deligence paid off! Let&#39;s see how this guy will pull thorugh as it fights off the enemy,&quot; Yagami exclaimed as he placed his hand on the battleship to lean on it.
+&quot;Our hard work and deligence paid off! Let&#39;s see how this guy will pull thorugh as it fights off the enemy,&quot; Yagami exclaimed as he placed his hand on the battleship to lean on it. 
 
 &quot;Haha! I&#39;m pretty sure it&#39;ll survive throughout the war. It&#39;s strong enough to defeat all every enemy!&quot; Kagami said.
 
 You chuckled under your breath and placed your hands on your ships in confidence, &quot;Surrending would be a disgrace to the nation.&quot;
+
 &lt;!--legend inserted here(battleship)--&gt;
 &lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\yamato2.jpg&quot; 
 width = &quot;1200&quot; height = &quot;700&quot;&gt;
@@ -169,19 +163,19 @@ width = &quot;1200&quot; height = &quot;700&quot;&gt;
 &lt;img src=&quot;C:\Users\Chunchunmaru\Documents\Twine\Images\yamato.jpg&quot;
 width = &quot;1200&quot; height = &quot;700&quot;&gt;
 
-[[Get home from work-&gt; Later That Day]] </tw-passagedata><tw-passagedata pid="13" name="On The Day of the bombing" tags="" position="384,1149" size="100,100">Morning of August 6th, 1945. You head to work normally at Kure shipyard
+[[Get home from work-&gt; Later That Day]] </tw-passagedata><tw-passagedata pid="13" name="On The Day of the bombing" tags="" position="459,1120" size="100,100">Morning of August 6th, 1945. You head to work normally at Kure shipyard
 You say goodbye to your family before you head to work especially your little ones who are 4 and 6 years old. 
 
-[[Ultimatum]] </tw-passagedata><tw-passagedata pid="14" name=" Later That Day" tags="" position="376,999" size="100,100">It&#39;s already six o&#39;clock in the evening, Coming home from work you are exhausted and want some rest to prepare for the next day. 
+[[Ultimatum]] </tw-passagedata><tw-passagedata pid="14" name=" Later That Day" tags="" position="428,901" size="100,100">It&#39;s already six o&#39;clock in the evening, Coming home from work you are exhausted and want some rest to prepare for the next day. 
 Since the the last two years, the manager has forced you and your co-workers to work extra hours while paying less since Japan was losing the war and want to increase it effort. 
 
-[[August 6th|On The Day of the bombing]] </tw-passagedata><tw-passagedata pid="15" name="3 Days After The Bombing of Hiroshima" tags="" position="983,1043" size="100,100">On his way back from the shipyard, you are eager to see you family again. 
+[[August 6th|On The Day of the bombing]] </tw-passagedata><tw-passagedata pid="15" name="3 Days After The Bombing of Hiroshima" tags="" position="998,798" size="100,100">On his way back from the shipyard, you are eager to see you family again. 
 However, you see a huge flash that is bright as day coming from the direction of Hiroshima city and then you feel the gust of wind and the shock coming from the same direction. 
 
 You feels speechless and and hoping it is not what you are thinking that happened. 
 The train make an emergency stop due to unexpected incidents. You are 15 mins away from home and you decide to make a run home. 
 
-[[Continue your way home|Destruction]]</tw-passagedata><tw-passagedata pid="16" name="Destruction" tags="" position="984,1218" size="100,100">You arrive at the edge of the city and the sight shocks you: 
+[[Continue your way home|Destruction]]</tw-passagedata><tw-passagedata pid="16" name="Destruction" tags="" position="1001,999" size="100,100">You arrive at the edge of the city and the sight shocks you: 
 
 &lt;!--the player stop at the edge of the town--&gt; 
 &lt;img src=&quot;C:\Users\Chunchunmaru\Documents\Twine\Images\groundzero.png&quot; 
@@ -198,7 +192,7 @@ width = &quot;700&quot; height = &quot;500&quot;&gt;
 
 [[The news|More aftermath]]
 
-&lt;audio src=&quot;C:\Users\Chunchunmaru\Documents\Twine\Sound\ToZanarkand.mp3&quot; autoplay loop&gt;</tw-passagedata><tw-passagedata pid="17" name="Happy Ending" tags="" position="1325,1596" size="100,100">&lt;!--images of modern Hiroshima with no source since it&#39;s alternative--&gt;
+&lt;audio src=&quot;C:\Users\Chunchunmaru\Documents\Twine\Sound\ToZanarkand.mp3&quot; autoplay loop&gt;</tw-passagedata><tw-passagedata pid="17" name="Happy Ending" tags="" position="1302,1506" size="100,100">&lt;!--images of modern Hiroshima with no source since it&#39;s alternative--&gt;
 
 Modern Day Japan
 
@@ -211,7 +205,7 @@ width = &quot;700&quot; heigth = &quot;500&quot;&gt;
 &lt;img src= &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\modern3.jpg&quot; 
 width = &quot;700&quot; heigth = &quot;500&quot;&gt;
 
-The end</tw-passagedata><tw-passagedata pid="18" name="More aftermath" tags="" position="997,1384" size="100,100">You pick up the newspaper and have a glimpse at the full scale destruction
+The end</tw-passagedata><tw-passagedata pid="18" name="More aftermath" tags="" position="1001,1201" size="100,100">You pick up the newspaper and have a glimpse at the full scale destruction
 
 &lt;img src= &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\building.png&quot; 
 width = &quot;700&quot; heigth = &quot;500&quot;&gt;
@@ -233,11 +227,8 @@ width = &quot;700&quot; heigth = &quot;500&quot;&gt;
 &lt;img src= &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\streetAfterMath.jpg&quot; 
 width = &quot;700&quot; heigth = &quot;500&quot;&gt;
 
-[[US Citizen]] </tw-passagedata><tw-passagedata pid="19" name="Japanese Official" tags="" position="842,696" size="100,100">You are now Kamado Tanjiro, a high ranking Japanese official who is highly respected by the rest of the Japanese government.
-Not everyone in the Japanese government agrees that Japan should surrender, however regardless of what option you choose, they will support your decision.
-[[Japan&#39;s Standing|Background Information of Japanese official]] </tw-passagedata><tw-passagedata pid="20" name="The Allies Send The Ultimatum" tags="" position="1178,638" size="100,100">On July 26th, one week after John&#39;s meeting with President Truman the US sends the Potsdam Declaration to the Axis powers. Tensions among the Allies are high as they await the Axis responses.
-[[One Day After The Allies Send The Ultimatum|Japanese Official]]</tw-passagedata><tw-passagedata pid="21" name="US Citizen" tags="" position="1170,1478" size="100,100">(if: $fate &lt; 0) [John found out that Japan surreder with the Potsdam ultimatum Japan surrender early leads to happy ending [[Happy Ending]] ]
-(else:) [John found out on NY Times that the Japan surrender after the bombing and the war end[[Japan Surrender]]]</tw-passagedata><tw-passagedata pid="22" name="Japan Surrender" tags="" position="998,1621" size="100,100">On September 2, 1945, Japanese officials board the USS Missouri to sign the surrendering terms.
+[[US Citizen]] </tw-passagedata><tw-passagedata pid="19" name="Japanese Official" tags="" position="899,468" size="100,100">[[Japan&#39;s Standing]] </tw-passagedata><tw-passagedata pid="20" name="The Allies Send The Ultimatum" tags="" position="1180,514" size="100,100">[[One Day After The Allies Send The Ultimatum|Japanese Official]]</tw-passagedata><tw-passagedata pid="21" name="US Citizen" tags="" position="1167,1306" size="100,100">(if: $fate &lt; 0) [John found out that Japan surreder with the Potsdam ultimatum Japan surrender early leads to happy ending [[Happy Ending]] ]
+(else:) [John found out on NY Times that the Japan surrender after the bombing and the war end[[Japan Surrender]]]</tw-passagedata><tw-passagedata pid="22" name="Japan Surrender" tags="" position="1004,1501" size="100,100">On September 2, 1945, Japanese officials board the USS Missouri to sign the surrendering terms.
 
 &lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\surrender2.jpg&quot; 
 width = &quot;700&quot; height = &quot;500&quot;&gt;
@@ -246,23 +237,7 @@ width = &quot;700&quot; height = &quot;500&quot;&gt;
 width = &quot;700&quot; height = &quot;500&quot;&gt;
 
 &lt;img src = &quot;C:\Users\Chunchunmaru\Documents\Twine\Images\surrender3.jpg&quot; 
-width = &quot;700&quot; height = &quot;500&quot;&gt;</tw-passagedata><tw-passagedata pid="23" name="Background Information of Japanese official" tags="" position="645,523" size="100,100">Japan is essentially the sole remaining Axis power.
-Food supplies are beginning to run low and the economy is extremely low, years of war effort has left Imperical Japan citizens in peril with the lack of food and supply.
-Although many officials wish for surrender, the military is against it.
-[[Reponse]]</tw-passagedata><tw-passagedata pid="24" name="Reponse" tags="" position="438,341" size="100,100">After careful consideration of the ultimatum, Japan needs to decide on its response.
-
-[[[Surrender|Japan&#39;s Standing]](set $fate -= 1]
-[[[Refuse to surrender|Japan&#39;s Standing]] (set $fate += 1]
-[[Mokusatsu (wait unitil the USSR sends it response)|Japan&#39;s Standing]]</tw-passagedata><tw-passagedata pid="25" name="saving lives" tags="" position="842,175" size="100,100">With mounting public pressure to end the war due to the loss of their love ones and, many parents losses their children to the war, many wives became widows and many children will have to grow up without a father.
-If Japan refuse to surrender, the US will have to launch a full invasion against mainland Japan which will increase the casualty of both sides. </tw-passagedata><tw-passagedata pid="26" name="new weapon" tags="" position="878,502" size="100,100">The atomic bomb derive it power from the spliting of atoms which store an enormous amount of energy. Normally, the nuclear of an atom consist of protons and neutrons that are pack into a dense mass. Although proton have a positive charge, base on the fundamental law of electro magnetic, they should propell each other and not stay pack like that, however, the force that hold them together is the gravitational force. As in nature, most atoms stay in it lowest energy state therefore they stay really close togther or really far appart. Einstein is the one who found out a way to calculate the so call &quot;rest energy&quot; of an &quot;object&quot; using the equation: 
-&lt;!--insert energy graph here--&gt;
-	E = mc^^2 ^^ 	legend: 
-					m: mass of the object
-					c: light speed (300 000 km/s)
-The two bomb that was completed use &quot;uranium&quot; and &quot;plutonium&quot; element to produce energy. These two elements are very heavy and unstable therefore spliting them much easier than other elements. </tw-passagedata><tw-passagedata pid="27" name="leader positon" tags="" position="783,339" size="100,100">Using the atomic bomb will not just end the war but will also help the United States claim the world leader position with a strong economy and the possession of a super weapon capable of wiping out any city in an instance.
-Securing the world leader position will help extend influences and maintain peace.</tw-passagedata><tw-passagedata pid="28" name="gaining an ally" tags="" position="1566,289" size="100,100">Aside from China, the United States lack influence in the Pacific. Furthermore, China has the sign of being influence by the rise of the communist party and might turn against the US.
-If the US can get Japan on their side, their power would extend their influence into Asia and have complete control of the Pacifc Ocean which is strategicly important. </tw-passagedata><tw-passagedata pid="29" name="relationship" tags="" position="1580,526" size="100,100">As the war coming to an end, I realize that the central power in the war shifted the two main factions with the Allies countries endor the idea of capitalism and a new wave in the East that endors the idea of Communism. 
-I think that when the common enemy - the Axis power lose the war - the tension between the two factions increase to fight for more influences. Therefore testing the bomb would be unwise would further escalate this tension and might trigger an arm race between countries.</tw-passagedata></tw-storydata>
+width = &quot;700&quot; height = &quot;500&quot;&gt;</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
